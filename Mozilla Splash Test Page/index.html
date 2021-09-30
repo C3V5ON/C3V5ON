@@ -160,12 +160,9 @@
       <div class="red-panda">
         <!-- insert picture element -->
         <picture>
-          <img srcset="images/redpanda600.jpg 600w,
-                       images/red-panda.jpg 1600w"
-               sizes="(max-width:600px) 600px,
-                      1600px"
-               src="red-panda.jpg"
-               alt="Picture of a Red Panda on tree branch.">
+          <source media= "(max-width: 599px)" srcset="images/redpanda600.jpg" >
+          <source media= "(min-width:600px)" srcset="images/red-panda.jpg">
+          <img src="red-panda.jpg" alt="Picture of a Red Panda on tree branch.">
         </picture>
       </div>
 
